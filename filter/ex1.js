@@ -13,8 +13,15 @@ Expected OUTPUT for this sample:
 
 */
 
-function getPositiveNumbers(numbers) {
+function getPositiveNumbers(numbers) { 
+  const result = numbers.filter(function(actuelNumbers){
+    return actuelNumbers >= 0
+  })
+  return result
 }
+
+
+
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
