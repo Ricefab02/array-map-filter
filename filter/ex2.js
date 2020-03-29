@@ -24,9 +24,15 @@ Expected OUTPUT for this sample:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
 */
+ 
 
 function keepStarks(names) {
+  let name = names.filter(names=>(names.endsWith('Stark')));
+  return name
 }
+
+
+  
 
 // DON'T TOUCH THIS!
 module.exports = keepStarks;
