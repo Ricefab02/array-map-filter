@@ -27,11 +27,12 @@ Expected OUTPUT for this sample array:
 */
 
 function getStringsLength(strings) {
-  return strings.length;  
-}
-const food = ['Chicken', 'Bacon', 'Tofu', 'Mayonnaise'];
-const lengths = food.map(getStringsLength);
-console.log(`${food} contains ${lengths} characters`);
+  const result = strings.map(function(actuelString) { 
+   return `${actuelString} contains ${actuelString.length} characters`
+    
+  });
+return result;
+};
 
 
 
