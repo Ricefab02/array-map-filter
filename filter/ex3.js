@@ -33,7 +33,12 @@ Expected OUTPUT for these sample arguments:
 */
 
 function filterOnPrice(products, maxPrice) {
-}
-
+  let result = products.filter(products=>(products.price <= maxPrice))
+    return result
+};
+    
+  
+  
+  
 // DON'T TOUCH THIS!
 module.exports = filterOnPrice;
