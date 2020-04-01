@@ -43,8 +43,16 @@ Expected OUTPUT for this sample
 */
 
 function getFoodCategories(foods) {
+  const result = foods.map(function(foods) {
+  if (foods.isVegetarian === true)
+  return `${foods.food} is suitable for vegetarians`
+    else
+      return `${foods.food} is not suitable for vegetarians`
+  })
+  return result
 }
 
+  
 
 
 // DON'T TOUCH THIS!
