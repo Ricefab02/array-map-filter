@@ -62,8 +62,19 @@ Expected OUTPUT for this sample:
  */
 
 function getMoviesFreshness(movies) {
+  let resultat = movies.map(function(movie) {
+    const ratedMovie = {...movie}
+    if (ratedMovie.rating < 60)
+      ratedMovie.label = 'rotten';
+    else if (ratedMovie.rating >= 60 && ratedMovie.rating <= 75)
+      ratedMovie.label= 'fresh';
+    else
+      ratedMovie.label= 'certified fresh'; 
+    return ratedMovie
+  })
+  console.log (movies)
+  return resultat
 }
-
 
 
 // DON'T TOUCH THIS!
